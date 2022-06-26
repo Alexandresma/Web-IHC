@@ -1,0 +1,334 @@
+
+/*Limpar formatações padrão*/
+* 
+{
+	margin: 0;
+	padding: 0;
+}
+
+body
+{
+	font-size: 19px;/*16px; tamanho da fonte*/
+	font-family: Changa;/*Grandstander;"Sofia";""Monteserrat", serif;Trebuchet MS", Helvetica, sans-serif; fonte usada no site*/
+	/*background-color: blue;#1C1C1C;  /*Fundo preto	*/
+	background-image: url(../imagens/imagem20.jpg);/**/
+	display: flex;
+	height: 100vh;
+	width: 100vw;
+	
+	/*background-image: linear-gradient(45deg);
+	background-image: linear-gradient(45deg, #000, rgb(27, 3, 243), #acacac);
+	background-image: radial-gradient(farthest-side at 60% 55%, #45046a, #5c2a9d, #b5076b, #f1ebbb);*/
+	/*background-size: 100% 100%;*/
+	animation: colors 10s ease infinite;
+	
+}
+
+
+@keyframes colors {
+	0% {background-position: 0% 0%;}
+	50% {background-position: 100% 0%;}
+	100% {background-position: 0% 0%;}
+}
+/*IDs do site*/
+#navegacao /*id da barra de navegação*/
+{
+	/*background: #333;/* barra de navegação preta sem nada fica com as letra visiveis na hora que passa pela navegação*/
+	background-image: url(../imagens/imagem20.jpg);
+	background-size: 260% 260%;
+	border-bottom: 1px solid #d8d8d8;
+	height: 70px;/* tamanho da borda*/
+	position: fixed;
+	width: 100%;
+	top: 0;
+
+
+
+}
+
+#area /*area da barra de navegação Menu*/
+{
+	width: 1024px;/*Largura */
+	margin: 0 auto;
+}
+
+#area-principal /*area principal de navegação*/
+{ 
+	width: 1024px;/*Largura */
+	margin: 55px auto 10px auto;
+	
+}
+/*
+#logo {
+	float: left;
+	padding-top: 3px;
+	
+} Logo a esquerda*/
+
+#logo img {
+	width: 200px;
+	height: 200px;
+	float: left;
+	margin-top: -65px;
+	/*padding: 3px 0 0 0;*/
+	/*margin-left: 20px;
+	border: #000 solid 1px;
+	transition: width 2s, height 2s;
+	transition-timing-function: ease-in;*/
+}
+/*
+#logo img:hover {
+	width: 300px;
+	height: 210px;
+  }
+
+#menu  Menu a Direita
+{
+	float: right;
+	padding: 10px 0;
+}
+*/
+/*alterado para baixo*/
+#menu{
+	padding: 10px 0;
+    list-style:none;/**/
+	float: right;
+	margin-top: 3px
+	
+}
+
+#menu li{
+    position:relative;/**/
+	float: right;
+	/*margin-top: 12px;*/
+}
+
+#menu li a{
+    color: #fff;/*#333;*/
+    text-decoration: none; 
+    padding: 5px 10px; 
+	display: block;
+
+}
+
+#menu li a:hover{
+    background: #333;
+    color: #fff;
+    -moz-box-shadow: 0 3px 10px 0 #CCC;
+    -webkit-box-shadow: 0 3px 10px 0 #ccc;
+	text-shadow: 0px 0px 5px #fff;
+
+}
+
+#menu li  ul{
+    position: absolute;
+    top: 25px;
+    left:0;
+    background-color:#333;/*#fff;*/
+    display:none;
+}
+
+#menu li:hover ul, #menu li.over ul{
+	/*display:block;*/
+	display: block;
+	border-radius: 15px;
+} 
+
+#menu li ul li{
+    display:block;
+    width:250px;
+}
+
+/*alterado pra cima*/
+#postagem {
+	/*area de fundo da navegação*/
+	background: #FFF; /*fundo branco*/
+	/*color: #FFF;*/
+	padding: 25px;/*preenchemento*/
+	margin-top: 35px;
+	margin-bottom: 10px; /*Margin*/
+	border-radius: 25px;
+
+}
+
+#postagem-inicial {
+	/*area de fundo da navegação*/
+	/*background: #FFF; fundo branco*/
+	color: #fff;/*#FFF;*/
+	padding: 25px;/*preenchemento*/
+	margin-bottom: 10px; /*Margin*/
+	margin-top: 75px;
+	border-radius: 50px;
+}
+
+#postagem-inicial p {
+	font-size: 20px;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#postagem-inicial h1 {
+	font-size: 40px;
+	text-shadow: -1px 0 #0000ff, 0 1px #0000FF, 1px 0 #0000FF, 0 -1px #0000FF;
+	/*color: #4169E1;*/
+}
+
+/****************************************************
+***********************Formatação do menu************/
+h2
+{
+	color: #4169E1;
+}
+a 
+{
+	text-decoration: none; /*Retirar Estado dos link não aparecem*/
+	padding: 5px 10px; /* Preenchimento*/
+}
+/*
+p {
+	padding: 5px 3px 5px 3px;
+}*/
+
+/*Links não visitados*/
+a:link {color: #838383;}/* Tom de cinza*/
+
+/*Links vistados*/
+a:visited {color: #838383;}
+
+/*Links hover*/
+a:hover 
+{
+	color:  #4169E1;/*#fff;*/
+	/*background:#333;
+    color:#fff;*/
+    /*-moz-box-shadow:0 3px 10px 0 #CCC;
+    -webkit-box-shadow:0 3px 10px 0 #ccc;*/
+	text-shadow:0px 0px 5px rgb(53, 3, 190);
+	border-radius: 15px;
+}
+
+/*Links active*/
+
+a:active {color: #535353;}
+
+/*Classes*/
+
+.blue {color: #0066ff;/*#404040;/*#808080/*#809fff;/*#4d4dff;/*#4169E1;*/}
+.branco{color: #FFF}
+
+.data-postagem
+{
+	font-size: 14px;
+	border-bottom: 1px solid #f4f4f4;
+	display: block;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+.img-postagem
+{
+	float: left;
+	margin: 0 10px 5px 0; /* Espaçamento da foto com texto*/
+	width: 200px;
+	border-radius: 25px;
+
+}
+
+.postado{
+	border-left: 5px solid #c2c2d6;
+	padding-left: 5px;
+	display: block;
+	margin-top: 30px;
+}
+
+#postagem-inicial h1 {
+	text-align: center;
+	/*margin: 0 10px 0 10px ;*/
+}
+
+#postagem-inicial p {
+	text-align: center;
+}
+
+.titulo {
+	color: #0000ff;
+	padding-left: 5px;
+	
+}
+
+.pcursos {
+	/*color: green;*/
+	padding: 5px 30px 5px 30px;
+	text-align: justify;
+}
+
+#postagem ul {
+	padding: 10px 5px 5px 25px;
+		
+}
+ 
+#postagem ul li {
+	list-style-type: circle;
+	color: #333;
+	margin-left: 20px;
+}
+
+#postagem ul li a {
+	color: #000;
+}
+
+#menu li ul li a img {
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	margin-bottom: -2px;
+}
+
+#menu li ul li a span {
+	padding-left: 7px;
+}
+
+#postagem-cursos {
+	/*area de fundo da navegação*/
+	background: #FFF; /*fundo branco*/
+	/*color: #FFF;*/
+	padding: 25px;/*preenchemento*/
+	margin-top: 35px;
+	margin-bottom: 10px; /*Margin*/
+	border-radius: 25px;	
+	
+}
+
+#postagem-cursos h2 {
+	padding: 0px 20px 0px 20px;
+	
+}
+
+#postagem-cursos h3 {
+	padding: 0px 10px 0px 20px;
+	color: #333;
+}
+
+#postagem-cursos ul{
+	padding-left: 65px;
+	list-style-type: circle;
+	
+}
+
+.multiplas {
+	height: 610px;
+	width: 700px;
+	padding-left: 105px;
+	border-radius: 200px;
+}
+
+#postagem-cursos h3 img{
+	height: 40px;
+	width:  40px;
+	float: left;;
+	
+}
+
+#postagem-cursos h3 {
+
+
+	
+}
+	
